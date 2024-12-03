@@ -1,0 +1,32 @@
+@keyframes animated {
+    0% {
+        background-position-x: 0%!important;
+    }
+    100% {
+        background-position-x: 100%!important;
+    }
+  }
+.nameShining {
+    font-size: 200px;
+    position: relative!important;
+    /* margin: 0; */
+    background: linear-gradient(to left,
+        #888888, 
+        #c2baba, 
+        #252424, 
+        #444444, 
+        #666666,
+        #2e2c2c, 
+        #888888, 
+        #d3c0c0,
+        #888888,
+        #d7cbcb)!important;
+    background-clip: text!important;
+    -webkit-background-clip: text!important;
+    color: transparent!important;
+    display: inline-block!important;
+    background-size: 900%!important;
+    transition: transform 0.5s ease-in!important;
+    animation: animated 10s linear infinite!important; /* Continuous animation */
+    text-decoration: none!important;
+}

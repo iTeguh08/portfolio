@@ -256,7 +256,7 @@ a:hover,
   -ms-transform: rotateY(360deg);
   transform: rotateY(360deg);
 }
-@keyframes animated {
+@keyframes shineAnimation {
   0% {
       background-position-x: 0%;
   }
@@ -265,27 +265,40 @@ a:hover,
   }
 }
 .nameShining {
-  position: relative!important;
-  /* margin: 0; */
-  background: linear-gradient(to left,
-      #888888, 
-      #c2baba, 
-      #252424, 
-      #444444, 
-      #666666,
-      #2e2c2c, 
-      #888888, 
-      #d3c0c0,
-      #888888,
-      #d7cbcb)!important;
-  background-clip: text!important;
-  -webkit-background-clip: text!important;
+  position: relative;
+  background: linear-gradient(
+      90deg, 
+      #F5F5F5, 
+      #E0E0E0, 
+      #D3D3D3, 
+      #A9A9A9,
+      #808080, 
+      #767272, 
+      #878181,
+      #808080,
+      #A9A9A9,
+      #D3D3D3,
+      #F5F5F5,
+      #E0E0E0,
+      #898181, 
+      #837e7e, 
+      #716d6d,
+      #6f6a6a,
+      #6d6969, 
+      #6d6a6a,
+      #8f8b8b,
+      #808080,
+      #A9A9A9,
+      #D3D3D3,
+      #E0E0E0,
+      #F5F5F5
+  );
+  background-size: 900%;
+  background-clip: text;
+  -webkit-background-clip: text;  
   color: transparent!important;
-  display: inline-block!important;
-  background-size: 900%!important;
-  transition: transform 0.5s ease-in!important;
-  animation: animated 10s linear infinite!important; /* Continuous animation */
-  text-decoration: none!important;
+  display: inline-block;
+  transition: transform 3s ease-in 1s;
 }
 /* title css */
 .title span {
@@ -507,6 +520,7 @@ a:hover,
   font-weight: 400;
 }
 .slider-content h1 {
+  animation: shineAnimation 7s linear infinite;
   font-size: 144px;
 }
 .slider-content h2 {
