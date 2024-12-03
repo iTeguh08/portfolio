@@ -1,0 +1,8 @@
+html {
+  scroll-behavior: smooth;
+}
+*{
+  font-family: "Jost", serif;
+  font-weight: 400;
+  text-decoration: none!important;
+}
