@@ -912,6 +912,7 @@
 }
 /* button */
 .btnPrimary {
+  border: none;
   padding: 15px 41px 15px 41px;
   font-size: 16px;
   color: var(--primary-color);
