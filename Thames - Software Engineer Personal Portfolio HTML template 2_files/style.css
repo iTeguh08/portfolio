@@ -54,7 +54,7 @@
   --main-color: #77de5b;
   --primary-color: #2d2e36;
   --secondary-color: #e2ecf6;
-  --text-color: #b0aac0;
+  --text-color: #d6d2e0;
   --meta-text-color: #9b9db1;
   --section-bg: #212228;
   --main-border: #474747;
@@ -300,6 +300,13 @@ a:hover,
   display: inline-block;
   transition: transform 3s ease-in 1s;
 }
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto
+}
 /* title css */
 .title span {
   font-size: 18px;
@@ -435,8 +442,8 @@ a:hover,
 	padding: 53px 0;
 	position: relative;
 }
-.main-menu ul li:hover > a,.main-menu ul li.active a,.mean-container .mean-nav ul li a:hover{color: var(--main-color);}
-.main-menu ul li > a:hover::before,.main-menu ul li > a:hover a.active::before{background: var(--main-color); width: 100%; left: 0;}
+.main-menu ul li:hover > a,.main-menu ul li.active a,.mean-container .mean-nav ul li a:hover{color: var(--secondary-color);}
+.main-menu ul li > a:hover::before,.main-menu ul li > a:hover a.active::before{background: var(--secondary-color); width: 100%; left: 0;}
 /* header sidebar css*/
 .header-sidebar {
 	position: fixed;
@@ -505,13 +512,13 @@ a:hover,
 /* 3. slider
 -------------------------------------------------------------- */
 .slider-height {
-  min-height: 1080px;
+  min-height: 99.7vh;
 }
 .slider-bg-color {
   background: #1e1f24;
 }
 .slider-img {
-  max-height: 100vh;
+  max-height: 80vh;
 }
 .slider-content .sub-heading {
   font-size: 24px;
@@ -959,13 +966,15 @@ span#main {
 }
 /* .side-mobile-menu start*/
 .side-mobile-menu {
+  border: none!important;
+  outline: none!important;
   width: 380px;
   position: fixed;
   left: -125%;
   top: 0;
   z-index: 9999;
   height: 100%;
-  background: var(--main-color);
+  background: var(--primary-color);
   transition: all 0.5s ease-out;
   overflow: scroll;
   -webkit-transition: all 0.5s ease-out;
@@ -974,14 +983,16 @@ span#main {
   -o-transition: all 0.5s ease-out;
 }
 .mean-container .mean-nav ul li a {
-  background: var(--main-color);
-  border: 0;
+  outline: none!important;
+  border: none!important;
+  color: #fff;
+  background: var(--primary-color);
   font-weight: 400;
-  padding: 8px 5%;
-  border-color: transparent;
   text-transform: capitalize;
 }
 .mean-container .mean-nav ul li a:hover {
+  border: none!important;
+  outline: none!important;
   background: var(--main-color);
   color: #fff;
 }
@@ -1252,7 +1263,7 @@ button.btn-close {
   color: var(--main-color);
 }
 .mean-container .mean-nav {
-  background: var(--main-color);
+  background: none;
 }
 .side-mobile-menu .close-icon span {
   color: var(--main-color);

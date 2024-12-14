@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,500;1,500&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./Thames - Software Engineer Personal Portfolio HTML template 2_files/meanmenu.css">
-    <link rel="stylesheet" href="./Thames - Software Engineer Personal Portfolio HTML template 2_files/bootstrap.min.css">
+    <link rel="stylesheet" href="./Thames - Software Engineer Personal Portfolio HTML template 2_files/bootstrap.css">
     <link rel="stylesheet" href="./Thames - Software Engineer Personal Portfolio HTML template 2_files/flaticon.css">
     <link rel="stylesheet" href="./Thames - Software Engineer Personal Portfolio HTML template 2_files/global.css">
     <link rel="stylesheet" href="./Thames - Software Engineer Personal Portfolio HTML template 2_files/default.css">
@@ -84,12 +84,11 @@
     </header>
     <div class="side-mobile-menu pt-15 pb-30 pl-30 pr-20 pb-100 d-block d-xl-none">
         <div class="justify-content-between w-100">
-            <div class="btn-close d-inline-block float-right clear-both mt-10 mb-15">
+            <div class="close-nav d-inline-block float-right clear-both mt-10 mb-15">
                 <a href="javascript:void(0);">
-                    <span class="icon-clear theme-color">
-                        <i class="fa fa-times">
-                        </i>
-                    </span>
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0,0,256,256">
+                        <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M4.99023,3.99023c-0.40692,0.00011 -0.77321,0.24676 -0.92633,0.62377c-0.15312,0.37701 -0.06255,0.80921 0.22907,1.09303l6.29297,6.29297l-6.29297,6.29297c-0.26124,0.25082 -0.36647,0.62327 -0.27511,0.97371c0.09136,0.35044 0.36503,0.62411 0.71547,0.71547c0.35044,0.09136 0.72289,-0.01388 0.97371,-0.27511l6.29297,-6.29297l6.29297,6.29297c0.25082,0.26124 0.62327,0.36648 0.97371,0.27512c0.35044,-0.09136 0.62411,-0.36503 0.71547,-0.71547c0.09136,-0.35044 -0.01388,-0.72289 -0.27512,-0.97371l-6.29297,-6.29297l6.29297,-6.29297c0.29576,-0.28749 0.38469,-0.72707 0.22393,-1.10691c-0.16075,-0.37985 -0.53821,-0.62204 -0.9505,-0.60988c-0.2598,0.00774 -0.50638,0.11632 -0.6875,0.30273l-6.29297,6.29297l-6.29297,-6.29297c-0.18827,-0.19353 -0.4468,-0.30272 -0.7168,-0.30273z"></path></g></g>
+                    </svg>
                 </a>
             </div>
         </div>
@@ -142,24 +141,25 @@
                         <div
                             class="col-xl-5 col-lg-6 col-md-12 col-sm-11 col-12 d-flex align-items-center justify-content-center">
                             <div class="slider-wrapper h-100">
-                                <div class="slider-content text-center mb-130 position-relative z-index11"
-                                    data-aos="fade-right" data-aos-duration="2200" data-aos-delay="1000">
-                                    <h1 class="mb-15 nameShining">
-                                        <span class="sub-heading d-block text-uppercase theme-color mb-0">Hello
-                                            I’m
-                                        </span> Teguh Prawira
+                                <div class="slider-content text-center position-relative z-index11">
+                                    <span data-aos="fade-right" data-aos-duration="1700" data-aos-delay="200" class="sub-heading d-block text-uppercase theme-color mb-0">Hello
+                                        I’m
+                                    </span> 
+                                    <h1 data-aos="fade-right" data-aos-duration="1750" data-aos-delay="500" class="nameShining">
+                                        Teguh
+                                        Prawira
                                     </h1>
-                                    <h3 class="pl-10 text-capitalize white-text mb-0"> Vocational High School Students</h3>
-                                    <h2 class="pl-10 text-capitalize white-text mb-40 -translate-y-7"> A Passionate
+                                    <h3 data-aos="fade-right" data-aos-duration="1950" data-aos-delay="900" class="pl-10 text-capitalize white-text mb-0"> Vocational High School Students</h3>
+                                    <h2 data-aos="fade-right" data-aos-duration="1800" data-aos-delay="1000" class="pl-10 text-capitalize white-text mb-40"> A Passionate
                                         <span class="d-text d-block d-sm-inline-block">
                                             <span id="simpleUsage" class="theme-color d-inline-block pl-2"
                                                 style="color: rgb(128, 219, 102);">
                                             </span>
-                                            <span class="cursor theme-color d-inline-block" data-owner="main" style="transition: 0.1s; opacity: 1;"></span>
+                                            <span class="cursor theme-color d-inline-block"></span>
                                         </span>
                                     </h2>
                                     <a href="#about">
-                                        <button class="btnPrimary position-relative over-hidden theme-bg-btn text-uppercase transition5">
+                                        <button data-aos="fade-up" data-aos-duration="1300" data-aos-delay="1100" class="btnPrimary mb-65 position-relative over-hidden theme-bg-btn text-uppercase transition5">
                                             Personal Info
                                         </button> 
                                     </a>
@@ -168,8 +168,8 @@
                         </div>
                         <div
                             class="col-xl-7 col-lg-6 col-md-7 col-sm-10 col-12 d-flex justify-content-center align-items-end h-100">
-                            <div class="slider-img pl-120 position-relative z-index1">
-                                <img src="./Thames - Software Engineer Personal Portfolio HTML template 2_files/person.png"
+                            <div class="slider-img position-relative z-index1">
+                                <img src="./Thames - Software Engineer Personal Portfolio HTML template 2_files/homePhoto.png"
                                     alt="hero image">
                             </div>
                         </div>
@@ -297,8 +297,8 @@
                                     <div class="about-img-over pl-50 transition5 d-inline-block position-relative">
                                         <div class="position-relative z-index11" data-tilt="" data-tilt-max="10"
                                             style="will-change: transform;">
-                                            <img class="border-radius10 position-relative z-index11"
-                                                src="./Thames - Software Engineer Personal Portfolio HTML template 2_files/about-img.jpg"
+                                            <img style="width: 415px;" class="border-radius10 position-relative z-index11"
+                                                src="./Thames - Software Engineer Personal Portfolio HTML template 2_files/aboutPhoto.jpeg"
                                                 alt="about image 1">
                                         </div>
                                         <div class="about-shape1 position-absolute" data-aos="fade-right"
@@ -311,16 +311,16 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 -translate-y-5">
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-11 -translate-y-5">
                             <div class="about-content position-relative mb-50">
                                 <div class="position-relative">
-                                    <div class="title"><span class="theme-color text-uppercase d-block mb-1 mt--5">About
+                                    <div class="title col-13"><span class="theme-color text-uppercase d-block mb-3 mt--5">About
                                             Me</span>
                                         <h2 class="mb-30">I Develop Skill in Website Building</h2>
                                     </div>
                                 </div>
-                                <p class="open-sans">A healthy environment, the foundation for a strong future</p>
-                                <p class="mb-25 open-sans"> Because the environment greatly influences our growth and
+                                <p class="open-sans col-11">A healthy environment, the foundation for a strong future</p>
+                                <p class="mb-25 open-sans col-11"> Because the environment greatly influences our growth and
                                     development, because friends, seniors, and teachers are motivators and sharers of
                                     experience.
                                 </p>
@@ -328,7 +328,7 @@
                                     <div class="row">
                                         <div class="col-xl-5 col-lg-12 col-md-6 col-sm-12 col-12">
                                             <ul class="about-info pl-0 mb-0">
-                                                <li class="d-inline-block pr-50">
+                                                <li class="d-inline-block pr-50 col-4">
                                                     <p class="jost-medium mb-6">Name</p>
                                                     <p class="jost-medium mb-6">Age</p>
                                                     <p class="jost-medium mb-6">Occupation</p>
@@ -342,7 +342,7 @@
                                         </div>
                                         <div class="col-xl-7 col-lg-12 col-md-6 col-sm-12 col-12">
                                             <ul class="about-info pl-0 mb-0">
-                                                <li class="d-inline-block pr-50">
+                                                <li class="d-inline-block pr-50 col-4">
                                                     <p class="jost-medium mb-6">Phone</p>
                                                     <p class="jost-medium mb-6">Email</p>
                                                     <p class="jost-medium mb-6">Nationality</p>
@@ -378,9 +378,9 @@
         <div id="education" class="education-area over-hidden pt-90">
             <div class="container mb-125">
                 <div class="row position-relative justify-content-center">
-                    <div class="col-xl-6 pr-55 col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div class="col-xl-6 pr-55 col-lg-6 col-md-12 col-sm-12 col-11">
                         <div class="position-relative">
-                            <div class="title"><span class="theme-color text-uppercase d-block mb-1">Education</span>
+                            <div class="title"><span class="theme-color text-uppercase d-block mb-3">Education</span>
                                 <h2 class="mb-25">My Education</h2>
                                 <p class="open-sans">My journey of education and gaining knowledge.</p>
                             </div>
@@ -406,7 +406,7 @@
                                         </h4>
                                         <p class="open-sans mb-0 mt-15">- Always ranked in the top 5 in class</p>
                                         <p class="open-sans mb-0 mt-10">- Becoming a participant in drawing
-                                            competitions, martial arts <span class="pl-10 open-sans">competitions</span>, and
+                                            competitions, martial arts competitions, and
                                             science olympiads.
                                         </p>
                                     </div>
@@ -429,9 +429,9 @@
                                         </h4>
                                         <p class="open-sans mb-0 mt-15"> - Always ranked in the top 5 in class </p>
                                         <p class="open-sans mb-0 mt-10"> - Twice won the Bali-wide student-level E-Sport
-                                            competition as the <span class="pl-10 open-sans">school's</span> main team. </p>
+                                            competition as the school's main team. </p>
                                         <p class="open-sans mb-0 mt-10"> - Became a participant in the English subject
-                                            competition and got top <span class="pl-10 open-sans"> 15</span> out of 50 participants
+                                            competition and got top 15</span> out of 50 participants
                                         </p>
                                     </div>
                                 </li>
@@ -452,11 +452,11 @@
                                             </span>
                                         </h4>
                                         <p class="open-sans mb-0 mt-10"> - Twice won the Bali-wide student-level E-Sport
-                                            competition as the <span class="pl-10 open-sans"> school's</span> main team.
+                                            competition as the school's main team.
                                         </p>
                                         <p class="open-sans mb-0 mt-15"> - Ranked 1st in class in 10th grade.
                                         <p class="open-sans mb-0 mt-15"> - I have knowledge in C++, AS
-                                            3.0, and website development HTML <span class="pl-10 open-sans">using </span>CSS JavaScript MySQL and PHP.
+                                            3.0, and website development HTML using CSS JavaScript MySQL and PHP.
                                         </p>
                                     </div>
                                 </li>
@@ -498,8 +498,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row service-wrappers mt-80"><!--[-->
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" data-aos="fade-up"
+                    <div class="row service-wrappers mt-80 justify-content-center"><!--[-->
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-11 d-flex" data-aos="fade-up"
                             data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
                             <div
                                 class="primary-bg single-service shadow-hover transition3 border-radius10 pl-50 pr-50 pt-65 pb-55 mb-25">
@@ -518,7 +518,7 @@
                                             </div> -->
                                         </div>
                                     </div>
-                                    <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
+                                    <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-11 d-flex">
                                         <div class="service-text d-inline-block ml-xl-2">
                                             <h3 class="mb-15 fontSemiBig">Hyper Text Markup Language</h3>
                                             <p class="open-sans mb-0">I master HTML to build the foundational structure
@@ -530,7 +530,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" data-aos="fade-up"
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-11 d-flex" data-aos="fade-up"
                             data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
                             <div
                                 class="primary-bg single-service shadow-hover transition3 border-radius10 pl-50 pr-50 pt-65 pb-55 mb-25">
@@ -549,7 +549,7 @@
                                             </div> -->
                                         </div>
                                     </div>
-                                    <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
+                                    <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-11 d-flex">
                                         <div class="service-text d-inline-block ml-xl-2">
                                             <h3 class="mb-15 fontSemiBig">Cascading Style Sheets</h3>
                                             <p class="open-sans mb-0">With CSS, I enhance the visual appeal of websites,
@@ -560,7 +560,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" data-aos="fade-up"
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-11 d-flex" data-aos="fade-up"
                         data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
                             <div
                                 class="primary-bg single-service shadow-hover transition3 border-radius10 pl-50 pr-50 pt-65 pb-55 mb-25">
@@ -579,7 +579,7 @@
                                             </div> -->
                                         </div>
                                     </div>
-                                    <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
+                                    <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-11 d-flex">
                                         <div class="service-text d-inline-block ml-xl-2">
                                             <h3 class="mb-15 fontSemiBig">Java Script</h3>
                                             <p class="open-sans mb-0">I use JavaScript for front end to create dynamic,
@@ -591,7 +591,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" data-aos="fade-up"
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-11 d-flex" data-aos="fade-up"
                         data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
                             <div
                                 class="primary-bg single-service shadow-hover transition3 border-radius10 pl-50 pr-50 pt-65 pb-55 mb-25">
@@ -610,10 +610,10 @@
                                             </div> -->
                                         </div>
                                     </div>
-                                    <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
+                                    <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-11 d-flex">
                                         <div class="service-text d-inline-block ml-xl-2">
                                             <h3 class="mb-15 fontSemiBig">PHP</h3>
-                                            <p class="open-sans mb-0">Using PHP, I handle backend development to enable
+                                            <p class="open-sans mb-0">I handle backend development to enable
                                                 seamless server communication, efficient data processing, and dynamic
                                                 functionality.
                                             </p>
@@ -645,7 +645,7 @@
                         class="swiper swiper-initialized swiper-horizontal row justify-content-center card-wrapper card-active mt-75 swiper-backface-hidden">
                         <!--[--><!--]-->
                         <!--[--><!--]--><!--[--><!--]--><!--[--><!--]-->
-                        <div class="swiper-slide col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 " data-aos="fade-up"
+                        <div class="swiper-slide col-xl-4 col-lg-4 col-md-4 col-sm-12 col-11" data-aos="fade-up"
                         data-aos-anchor-placement="top-bottom" data-aos-duration="900" data-aos-delay="100"><!--[-->
                             <div class="single-card mb-50 shadow-hover transition3">
                                 <div class="card-img">
@@ -723,7 +723,7 @@
                                 </div>
                             </div><!--]--><!---->
                         </div>
-                        <div class="swiper-slide col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 " data-aos="fade-up"
+                        <div class="swiper-slide col-xl-4 col-lg-4 col-md-4 col-sm-12 col-11" data-aos="fade-up"
                             data-aos-anchor-placement="top-bottom" data-aos-duration="900" data-aos-delay="100"><!--[-->
                             <div class="single-card mb-50 shadow-hover transition3">
                                 <div class="card-img">
@@ -811,7 +811,7 @@
                                 </div>
                             </div><!--]--><!---->
                         </div>
-                        <div class="swiper-slide col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 " data-aos="fade-up"
+                        <div class="swiper-slide col-xl-4 col-lg-4 col-md-4 col-sm-12 col-11" data-aos="fade-up"
                         data-aos-anchor-placement="top-bottom" data-aos-duration="900" data-aos-delay="100"><!--[-->
                             <div class="single-card mb-50 shadow-hover transition3">
                                 <div class="card-img">
@@ -896,7 +896,7 @@
                                 </div>
                             </div><!--]--><!---->
                         </div>
-                        <div class="swiper-slide col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 " data-aos="fade-up"
+                        <div class="swiper-slide col-xl-4 col-lg-4 col-md-4 col-sm-12 col-11" data-aos="fade-up"
                         data-aos-anchor-placement="top-bottom" data-aos-duration="900" data-aos-delay="100"><!--[-->
                             <div class="single-card mb-50 shadow-hover transition3">
                                 <div class="card-img">
@@ -996,7 +996,7 @@
                                 </div>
                             </div><!--]--><!---->
                         </div>
-                        <div class="swiper-slide col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 " data-aos="fade-up"
+                        <div class="swiper-slide col-xl-4 col-lg-4 col-md-4 col-sm-12 col-11" data-aos="fade-up"
                         data-aos-anchor-placement="top-bottom" data-aos-duration="900" data-aos-delay="100"><!--[-->
                             <div class="single-card mb-50 shadow-hover transition3">
                                 <div class="card-img">
@@ -1071,7 +1071,7 @@
                                 </div>
                             </div><!--]--><!---->
                         </div>
-                        <div class="swiper-slide col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 " data-aos="fade-up"
+                        <div class="swiper-slide col-xl-4 col-lg-4 col-md-4 col-sm-12 col-11" data-aos="fade-up"
                         data-aos-anchor-placement="top-bottom" data-aos-duration="900" data-aos-delay="100"><!--[-->
                             <div class="single-card mb-50 shadow-hover transition3">
                                 <div class="card-img">
@@ -1170,7 +1170,7 @@
                                 </div>
                             </div><!--]--><!---->
                         </div>
-                        <div class="swiper-slide col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 " data-aos="fade-up"
+                        <div class="swiper-slide col-xl-4 col-lg-4 col-md-4 col-sm-12 col-11" data-aos="fade-up"
                         data-aos-anchor-placement="top-bottom" data-aos-duration="900" data-aos-delay="100"><!--[-->
                             <div class="single-card mb-50 shadow-hover transition3">
                                 <div class="card-img">
@@ -1254,7 +1254,7 @@
                                 </div>
                             </div><!--]--><!---->
                         </div>
-                        <div class="swiper-slide col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 " data-aos="fade-up"
+                        <div class="swiper-slide col-xl-4 col-lg-4 col-md-4 col-sm-12 col-11" data-aos="fade-up"
                         data-aos-anchor-placement="top-bottom" data-aos-duration="900" data-aos-delay="100"><!--[-->
                             <div class="single-card mb-50 shadow-hover transition3">
                                 <div class="card-img">
@@ -1362,7 +1362,7 @@
                                         <button type="button" class="btn-close d-flex align-items-center" data-bs-dismiss="modal" aria-label="Close">
                                             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0,0,256,256">
                                                 <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M4.99023,3.99023c-0.40692,0.00011 -0.77321,0.24676 -0.92633,0.62377c-0.15312,0.37701 -0.06255,0.80921 0.22907,1.09303l6.29297,6.29297l-6.29297,6.29297c-0.26124,0.25082 -0.36647,0.62327 -0.27511,0.97371c0.09136,0.35044 0.36503,0.62411 0.71547,0.71547c0.35044,0.09136 0.72289,-0.01388 0.97371,-0.27511l6.29297,-6.29297l6.29297,6.29297c0.25082,0.26124 0.62327,0.36648 0.97371,0.27512c0.35044,-0.09136 0.62411,-0.36503 0.71547,-0.71547c0.09136,-0.35044 -0.01388,-0.72289 -0.27512,-0.97371l-6.29297,-6.29297l6.29297,-6.29297c0.29576,-0.28749 0.38469,-0.72707 0.22393,-1.10691c-0.16075,-0.37985 -0.53821,-0.62204 -0.9505,-0.60988c-0.2598,0.00774 -0.50638,0.11632 -0.6875,0.30273l-6.29297,6.29297l-6.29297,-6.29297c-0.18827,-0.19353 -0.4468,-0.30272 -0.7168,-0.30273z"></path></g></g>
-                                                </svg>
+                                            </svg>
                                         </button>
                                     </div>
                                     <div class="modal-body">
@@ -1391,7 +1391,7 @@
                 </span>
             </div>
         </div>
-        <div id="contact" class="contact-area over-hidden mb-160 pt-175">
+        <div id="contact" class="contact-area over-hidden mb-160 pt-140">
             
             <div id="hero-btn" class="contact-wrapper position-relative">
                 <div class="container">
@@ -1403,8 +1403,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-xl-6 col-lg-5 col-md-12 col-sm-12 col-12">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-6 col-lg-5 col-md-12 col-sm-12 col-11">
                             <div class="contact-wrapper mt-70">
                                 <ul class="contact-info-content pl-0">
                                     <li class="contact-location s-contact mb-20 transition-3 d-lg-flex align-items-center">
@@ -1457,43 +1457,43 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-xl-6 col-lg-7 col-md-12 col-sm-12 col-12">
+                        <div class="col-xl-6 col-lg-7 col-md-12 col-sm-12 col-11">
                             <div class="contact-wrapper">
                                 <div class="contact-form mt-45">
                                     <form action="https://thames-demo-nuxt.vercel.app/php/mail.php" method="POST"
                                         id="contact-form">
                                         <div class="contact-info pt-20">
                                             <div class="row">
-                                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 pr6 mb-12"
+                                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-lg-12 pr6 mb-12"
                                                     data-aos="fade-up" data-aos-anchor-placement="top-bottom"
-                                                    data-aos-duration="1500">
+                                                    data-aos-duration="1000">
                                                     <input class="name open-sans w-100 theme-border pl-20 pt-15 pb-15 pr-10 form-color border-radius5 open-sans"
                                                     type="text" name="inputName" id="inputName"
                                                     placeholder="Your Name">
                                                 </div>
-                                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 pl6 pr-12 mb-12"
+                                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-lg-12 pl6 pr-12 mb-12"
                                                     data-aos="fade-up" data-aos-anchor-placement="top-bottom"
-                                                    data-aos-duration="1500">
+                                                    data-aos-duration="1000">
                                                     <input class="email open-sans w-100 theme-border pl-20 pt-15 pb-15 pr-10 form-color border-radius5 open-sans"
                                                     type="email" name="inputEmail" id="inputEmail"
                                                     placeholder="Your Email">
                                                 </div>
-                                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 pr6 mb-12"
+                                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-lg-12 pr6 mb-12"
                                                     data-aos="fade-up" data-aos-anchor-placement="top-bottom"
-                                                    data-aos-duration="1500">
+                                                    data-aos-duration="1000">
                                                     <input class="phone open-sans w-100 theme-border pl-20 pt-15 pb-15 pr-10 form-color border-radius5  open-sans"
                                                     type="text" name="inputPhone" id="inputPhone"
                                                     placeholder="Your Phone"></div>
-                                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 pl6 pr-12 mb-12"
+                                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-lg-12 pl6 pr-12 mb-12"
                                                     data-aos="fade-up" data-aos-anchor-placement="top-bottom"
-                                                    data-aos-duration="1500">
+                                                    data-aos-duration="1000">
                                                     <input class="subject open-sans w-100 theme-border pl-20 pt-15 pb-15 pr-10 form-color border-radius5 open-sans"
                                                     type="text" name="inputSubject" id="inputSubject"
                                                     placeholder="Your Subject">
                                                 </div>
                                             </div>
                                             <div class="row">
-                                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 pl-12 pr-12 mb-12">
+                                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-lg-12 pl-12 pr-12 mb-12">
                                                     <textarea class="massage open-sans w-100 theme-border pl-20 pt-15 pr-10 primary-color border-radius5 open-sans"
                                                     name="inputMessage" id="inputMessage"
                                                     placeholder="Start writing message here" data-aos="fade-up"
@@ -1503,7 +1503,7 @@
                                             </div>
                                             <button class="btnPrimary position-relative over-hidden text-white d-inline-block theme-bg-btn white-text text-uppercase"
                                                 type="submit" name="submit" data-aos="fade-up"
-                                                data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
+                                                data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
                                                 Submit Now 
                                             </button>
                                         </div>
@@ -1521,8 +1521,8 @@
         <div class="footer-area over-hidden pt-110 pb-60">
             <div class="footer-top">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-xl-4 col-lg-5 col-md-8 col-sm-7 col-12">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-4 col-lg-5 col-md-8 col-sm-7 col-11">
                             <div class="footer-widget footer-logo pb-40">
                                 <div class="foot-logo mb-30">
                                     <img
@@ -1537,7 +1537,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-3 offset-xl-2 col-lg-3 col-md-4 col-sm-4 col-12 d-none d-sm-block d-lg-none">
+                        <div class="col-xl-3 offset-xl-2 col-lg-3 col-md-4 col-sm-4 col-11 d-none d-sm-block d-lg-none">
                             <div class="footer-widget pb-40">
                                 <h4 class="mb-28 mt-2">Follow Me</h4>
                                 <ul class="social social-bg text-center d-flex">
@@ -1572,7 +1572,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-4 col-md-12 col-sm-12 col-12">
+                        <div class="col-xl-3 col-lg-4 col-md-12 col-sm-12 col-11">
                             <div class="footer-widget pb-40">
                                 <h4 class="mb-28 mt-2">Newsletter</h4>
                                 <div class="newsletter-form">
@@ -1589,7 +1589,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-3 offset-xl-2 col-lg-3 col-md-4 col-sm-4 col-12 d-sm-none d-lg-block">
+                        <div class="col-xl-3 offset-xl-2 col-lg-3 col-md-4 col-sm-4 col-11 d-sm-none d-lg-block">
                             <div class="footer-widget pb-40">
                                 <h4 class="mb-28 mt-2">Follow Me</h4>
                                 <ul class="social social-bg text-center d-flex pl-0">
@@ -1642,11 +1642,12 @@
     <script src="typer.js"></script>
     <script>
         new TypeIt("#simpleUsage", {
-            speed: 120,
+            speed: 100,
             deleteSpeed: 105,
             loop: true,
             waitUntilVisible: true,
         })
+        .pause(2900)
         .type("Web Developer")
         .pause(4500) // Pause before starting to delete
         .delete(13)   // Delete 'World!'

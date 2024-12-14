@@ -2,7 +2,7 @@
 @media screen and (min-width: 1921px) and (max-width: 5000px) {
   .slider-height,
   .slider-content-height {
-    height: 1080px;
+    /* height: 100vh; */
   }
   .slider-bg-img {
     border-bottom-right-radius: 12px;
@@ -79,33 +79,33 @@
     text-align: left!important;
   }
   .text-xl-left {
-      text-align: left !important
+      text-align: left !important;
   }
 
   .text-xl-right {
-      text-align: right !important
+      text-align: right !important;
   }
 
   .text-xl-center {
-      text-align: center !important
+      text-align: center !important;
   }
 }
 
 /* XL Device :1920px. */
 @media screen and (min-width: 1200px) and (max-width: 1600px) {
   .slider-content h1 {
-    font-size: 120px!important;
+    font-size: 110px!important;
   }
 }
 
 @media (min-width: 1400px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-      max-width: 1450px!important;
+      max-width: 1450px;
   }
 }
 
 /* XL Device :1356px. */
-@media screen and (min-width: 1200px) and (max-width: 1440px) {
+@media screen and (min-width: 1200px) {
   .slider-height {
     min-height: 100vh;
   }
@@ -152,6 +152,12 @@
   }
   .slider-social-link .social {
     padding-right: 48px;
+  }
+  .card-meta li a,
+  .card-meta li span,
+  .card-meta li a::before,
+  .card-meta li span::before {
+    font-size: 0.8rem!important;
   }
 }
 
@@ -206,6 +212,12 @@
   .single-intro-feature-content {
     padding: 55px 46px 35px 46px;
   }
+  .card-meta li a,
+  .card-meta li span,
+  .card-meta li a::before,
+  .card-meta li span::before {
+    font-size: 0.7rem!important;
+  }
 }
 
 /* LG Device :992px. */
@@ -241,7 +253,7 @@
     margin-bottom: 10px!important;
   }
   .slider-content h2 span {
-    font-size: 32px!important;
+    font-size: 35px!important;
   }
   .hero-shape2 {
     bottom: 13%;
@@ -626,10 +638,15 @@
     margin-bottom: 25px!important;
   }
   .slider-content h2 span {
-    font-size: 32px!important;
+    font-size: 35px!important;
   }
   .slider-content h2 {
-    font-size: 24px!important;
+    font-size: 27px!important;
+    line-height: 2!important;
+    margin-bottom: 20px!important;
+  }
+  .slider-content h3 {
+    font-size: 20px!important;
     line-height: 2!important;
     margin-bottom: 20px!important;
   }
@@ -949,6 +966,9 @@
     border-radius: 10px;
     padding: 0 40px;
   }
+  .education-area .container {
+    margin-bottom: 0!important  ;
+  }
   .education-area {
     padding-top: 0!important;
   }
@@ -984,16 +1004,22 @@
     margin-bottom: 10px!important;
   }
   .slider-content h2 {
-    font-size: 18px!important;
+    font-size: 21px!important;
+    margin-top: 12px!important;
+    margin-bottom: 15px!important;
+  }
+  .slider-content h3 {
+    font-size: 15px!important;
+    margin-top: 12px!important;
     margin-bottom: 15px!important;
   }
   .slider-content h2 span {
-    font-size: 20px!important;
+    font-size: 23px!important;
   }
   .title h2 {
     text-align: center!important;
-    font-size: 35px;
-    margin-bottom: 14px!important;
+    font-size: 2.1rem;
+    margin-bottom: 19px!important;
   }
   .title p {
     text-align: center!important;
@@ -1110,11 +1136,9 @@
   .slider-content {
     margin-top: 100px!important;
     padding-right: 0;
-    margin-bottom: 45px!important;
   }
   .slider-content h1 {
-    font-size: 60px!important;
-    margin-bottom: 18px!important;
+    font-size: 65px!important;
   }
   .slider-content span {
     font-size: 20px!important;
@@ -1192,13 +1216,15 @@
     margin-top: 20px;
   }
   .experience-service-text h3 {
-    font-size: 24px;
+    font-size: 1.5rem!important;
   }
   .experience-service-text h4 {
-    font-size: 21px;
+    color: var(--text-color)!important;
+    font-size: 1rem!important;
   }
   .experience-service-text h4 span {
-    font-size: 15px;
+    white-space: nowrap;
+    font-size: 0.9rem!important;
   }
   .progress-circular h4 {
     font-size: 22px;
@@ -1319,9 +1345,6 @@
   *::placeholder {
     font-size: 16px;
   }
-  /* .side-mobile-menu {
-    width: 95%;
-  } */
   .card-meta li.mr-15 {
     margin-right: 8px;
   }
@@ -1357,7 +1380,7 @@
     font-size: 60px;
   }
   .marquee-w.mb-125 {
-    margin-bottom: 55px;
+    margin-bottom: 55px!important;
   }
   .experience-margin {
     padding-left: 0;
@@ -1404,7 +1427,7 @@
     padding-bottom: 70px;
   }
   .contact-area {
-    margin-top: 65px;
+    /* margin-top: 65px; */
     margin-bottom: 0;
   }
   .card-area {
@@ -1561,7 +1584,7 @@
     margin-top: 45px;
   }
   .d-text.d-block.d-sm-inline-block {
-    display: block !important;
+    display: inline !important;
   }
   .slider-img::before {
     left: -28px;
@@ -1661,7 +1684,7 @@
   .card-meta li span,
   .card-meta li a::before,
   .card-meta li span::before {
-    font-size: 0.59rem!important;
+    font-size: 0.69rem!important;
   }
   .single-card .btnSecondary {
     font-size: 0.8rem!important;
@@ -1859,7 +1882,7 @@
 /* SM Small Device :550px. */
 @media screen and (min-width: 500px) and (max-width: 576px) {
   .slider-content h1 {
-    font-size: 90px!important;
+    font-size: 70px!important;
     padding: 0 30px!important;
   }
   .card-meta li a,

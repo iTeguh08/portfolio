@@ -43,7 +43,7 @@
         $(".side-mobile-menu").addClass('open-menubar');
         $(".body-overlay").addClass("opened");
     });
-    $(".btn-close").click(function(){
+    $(".close-nav").click(function(){
         $(".side-mobile-menu").removeClass('open-menubar');
         $(".body-overlay").removeClass("opened");
     });
