@@ -1157,7 +1157,7 @@
     margin-top: 15px!important;
   }
   .btnSecondary {
-    padding: 4px 30px!important;
+    padding: 4px 25px!important;
     font-size: 1rem!important;
   }
   .btnPrimary {
@@ -1832,7 +1832,7 @@
 }
 
 /* SM Small Device :550px. */
-@media screen and (min-width: 400px) and (max-width: 576px) {
+@media screen and (min-width: 380px) and (max-width: 576px) {
   h6 {
     font-size: 20px;
   }

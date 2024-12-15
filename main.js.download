@@ -43,6 +43,13 @@
         $(".side-mobile-menu").addClass('open-menubar');
         $(".body-overlay").addClass("opened");
     });
+    $(".mean-nav").on("click", function() {
+        // Menambahkan delay 300ms sebelum menghapus kelas
+        setTimeout(function() {
+            $(".side-mobile-menu").removeClass('open-menubar');
+            $(".body-overlay").removeClass("opened");
+        }, 300); // 300ms delay
+    });
     $(".close-nav").click(function(){
         $(".side-mobile-menu").removeClass('open-menubar');
         $(".body-overlay").removeClass("opened");

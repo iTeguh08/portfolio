@@ -990,6 +990,9 @@ span#main {
   font-weight: 400;
   text-transform: capitalize;
 }
+.side-mobile-menu h5, .side-mobile-menu .social {
+  padding: 13px 5%!important;
+}
 .mean-container .mean-nav ul li a:hover {
   border: none!important;
   outline: none!important;
@@ -999,7 +1002,7 @@ span#main {
 .side-mobile-menu.open-menubar {
   left: 0;
 }
-.close,
+
 .close:focus,
 .close:hover {
   opacity: 1;
