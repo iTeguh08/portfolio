@@ -1,0 +1,67 @@
+(function ($) {
+    "use strict";
+    
+    // JS Index
+    //----------------------------------------
+    // 1. sticky menu
+    // 2. mobile-menu(mean-menu)
+    // 3. preloader
+    // 4. One Page Nav
+    // 5. mobile-menu-sidebar
+    // 6. background image
+    // 7. brand active
+    // 8. wow animation  active
+    // 9. back top
+    // 10. parallax
+    //-------------------------------------------------
+
+    // 1. sticky menu
+    // ---------------------------------------------------------------------------
+    var wind = $(window);
+    var sticky = $("#header-sticky");
+    wind.on('scroll', function () {
+        var scroll = $(wind).scrollTop();
+        if (scroll < 2) {
+            sticky.removeClass("sticky-menu");
+        } else {
+            $("#header-sticky").addClass("sticky-menu");
+        }
+    });
+
+
+    // 2. mobile-menu(mean-menu)
+    //---------------------------------------------------------------------------
+    $("#mobile-menu").meanmenu({
+        meanMenuContainer: ".mobile-menu",
+        meanScreenWidth: "1199",
+    });
+
+
+    // 5. mobile-menu-sidebar
+    //---------------------------------------------------------------------------
+    $(".mobile-menubar").on("click", function(){
+        $(".side-mobile-menu").addClass('open-menubar');
+        $(".body-overlay").addClass("opened");
+    });
+    $(".mean-nav").on("click", function() {
+        // Menambahkan delay 300ms sebelum menghapus kelas
+        setTimeout(function() {
+            $(".side-mobile-menu").removeClass('open-menubar');
+            $(".body-overlay").removeClass("opened");
+        }, 300); // 300ms delay
+    });
+    $(".close-nav").click(function(){
+        $(".side-mobile-menu").removeClass('open-menubar');
+        $(".body-overlay").removeClass("opened");
+    });
+
+    $(".body-overlay").on("click", function () {
+		$(".side-mobile-menu").removeClass('open-menubar');
+		$(".body-overlay").removeClass("opened");
+	});
+
+// 10. aos js
+// ---------------------------------------------------------------------------
+AOS.init();  
+
+})(jQuery);	  
