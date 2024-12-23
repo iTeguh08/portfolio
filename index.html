@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,500;1,500&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./Thames - Software Engineer Personal Portfolio HTML template 2_files/meanmenu.css">
-    <link rel="stylesheet" href="./Thames - Software Engineer Personal Portfolio HTML template 2_files/bootstrap.css">
+    <!-- <link rel="stylesheet" href="./Thames - Software Engineer Personal Portfolio HTML template 2_files/bootstrap.min.css"> -->
     <link rel="stylesheet" href="./Thames - Software Engineer Personal Portfolio HTML template 2_files/flaticon.css">
     <link rel="stylesheet" href="./Thames - Software Engineer Personal Portfolio HTML template 2_files/global.css">
     <link rel="stylesheet" href="./Thames - Software Engineer Personal Portfolio HTML template 2_files/default.css">
@@ -40,28 +40,55 @@
                         <div
                             class="col-xl-10 col-lg-10 col-md-9 col-sm-8 col-7 pl-0 d-flex justify-content-end align-items-center">
                             <div class="main-menu d-none d-xl-block">
-                                <nav id="mobile-menu">
+                                <nav class="navbar-nav" id="mobile-menu">
                                     <ul class="d-block mb-0">
                                         <li>
-                                            <a href="#home">Home</a>
+                                            <a class="link-nav" href="#home">Home</a>
                                         </li>
                                         <li>
-                                            <a href="#about">About</a>
+                                            <a class="link-nav" href="#about">About</a>
                                         </li>
                                         <li>
-                                            <a href="#education">Education</a>
+                                            <a class="link-nav" href="#education">Education</a>
                                         </li>
                                         <li>
-                                            <a href="#skill">Skill</a>
+                                            <a class="link-nav" href="#skill">Skill</a>
                                         </li>
                                         <li>
-                                            <a href="#project">Project</a>
+                                            <a class="link-nav" href="#project">Project</a>
                                         </li>
 
                                         <li>
-                                            <a href="#contact">Contact</a>
+                                            <a class="link-nav" href="#contact">Contact</a>
                                         </li>
                                     </ul>
+                                    <script>
+                                        // Menambahkan event listener untuk scroll
+                                        window.addEventListener('scroll', function() {
+                                          const sections = document.querySelectorAll('section');
+                                          const navLinks = document.querySelectorAll('.navbar-nav .link-nav');
+                                    
+                                          let currentSection = null;
+                                    
+                                          // Menentukan section yang saat ini terlihat di layar
+                                          sections.forEach(section => {
+                                            const rect = section.getBoundingClientRect();
+                                            if (rect.top <= 2 && rect.bottom >= 0) {
+                                              currentSection = section.id;
+                                            }
+                                          });
+                                    
+                                          // Mengatur active class di navbar berdasarkan section yang terlihat
+                                          navLinks.forEach(link => {
+                                            if (link.getAttribute('href') === `#${currentSection}`) {
+                                              link.classList.add('active');
+                                            } else {
+                                              link.classList.remove('active');
+                                            }
+                                          });
+                                        });
+                                    </script>
+                                      
                                 </nav>
                             </div>
                             <div class="mobile-m-bar d-block d-lg-none">
@@ -133,7 +160,7 @@
     </div>
     <div class="body-overlay"></div><!--]-->
     <main class="over-hiddenn"><!--[-->
-        <div id="home" class="slider-area slider-bg-color over-hidden">
+        <section id="home" class="slider-area slider-bg-color over-hidden">
             <div class="single-slider slider-height over-hidden position-relative xxl-device-width bg-cover no-repeat"
                 data-background="/images/slider/slider-bg.jpg">
                 <div class="container slider-height d-flex align-items-end">
@@ -208,11 +235,11 @@
                     </ul>
                 </div>
             </div>
-        </div>
+        </section>
         <div class="intro-feature-area over-hidden position-relative section-bg">
             <div class="container">
                 <div class="row single-intro-feature-wrapper justify-content-center pt-170 pb-140"><!--[-->
-                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-9 col-11">
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-9 col-half-11">
                         <div data-tilt="" data-tilt-max="10"
                             class="primary-bg single-intro-feature-content border-radius10 transition5 mb-30">
                             <div class="intro-ft-icon d-inline-block mb-30 transition5">
@@ -228,9 +255,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-9 col-11">
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-9 col-half-11">
                         <div data-tilt="" data-tilt-max="10"
-                            class="primary-bg mt-60 single-intro-feature-content border-radius10 transition5 mb-30">
+                            class="primary-bg even-dedication mt-60 single-intro-feature-content border-radius10 transition5 mb-30">
                             <div class="intro-ft-icon d-inline-block mb-30 transition5">
                                 <img src="./Thames - Software Engineer Personal Portfolio HTML template 2_files/intro-ft-icon2.png"
                                     alt="icon1">
@@ -244,7 +271,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-9 col-11">
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-9 col-half-11">
                         <div data-tilt="" data-tilt-max="10"
                             class="primary-bg single-intro-feature-content border-radius10 transition5 mb-30">
                             <div class="intro-ft-icon d-inline-block mb-30 transition5">
@@ -260,9 +287,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-9 col-11">
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-9 col-half-11">
                         <div data-tilt="" data-tilt-max="10"
-                            class="primary-bg mt-60 single-intro-feature-content border-radius10 transition5 mb-30">
+                            class="primary-bg even-dedication mt-60 single-intro-feature-content border-radius10 transition5 mb-30">
                             <div class="intro-ft-icon d-inline-block mb-30 transition5">
                                 <img src="./Thames - Software Engineer Personal Portfolio HTML template 2_files/intro-ft-icon4.png"
                                     alt="icon1">
@@ -286,7 +313,7 @@
                     alt="intro shape 1">
             </div>
         </div>
-        <div id="about" class="about-area over-hidden">
+        <section id="about" class="about-area over-hidden">
             <div class="about-content-wrapper about-margin mt-170 mb-110 position-relative">
                 <div class="container">
                     <div class="row justify-content-center">
@@ -297,7 +324,7 @@
                                     <div class="about-img-over pl-50 transition5 d-inline-block position-relative">
                                         <div class="position-relative z-index11" data-tilt="" data-tilt-max="10"
                                             style="will-change: transform;">
-                                            <img style="width: 415px;" class="border-radius10 position-relative z-index11"
+                                            <img class="border-radius10 position-relative z-index11"
                                                 src="./Thames - Software Engineer Personal Portfolio HTML template 2_files/aboutPhoto.jpeg"
                                                 alt="about image 1">
                                         </div>
@@ -311,7 +338,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-11 -translate-y-5">
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-half-11 -translate-y-5">
                             <div class="about-content position-relative mb-50">
                                 <div class="position-relative">
                                     <div class="title col-13"><span class="theme-color text-uppercase d-block mb-3 mt--5">About
@@ -319,8 +346,8 @@
                                         <h2 class="mb-30">I Develop Skill in Website Building</h2>
                                     </div>
                                 </div>
-                                <p class="open-sans col-11">A healthy environment, the foundation for a strong future</p>
-                                <p class="mb-25 open-sans col-11"> Because the environment greatly influences our growth and
+                                <p class="open-sans">A healthy environment, the foundation for a strong future</p>
+                                <p class="mb-25 open-sans"> Because the environment greatly influences our growth and
                                     development, because friends, seniors, and teachers are motivators and sharers of
                                     experience.
                                 </p>
@@ -328,7 +355,7 @@
                                     <div class="row">
                                         <div class="col-xl-5 col-lg-12 col-md-6 col-sm-12 col-12">
                                             <ul class="about-info pl-0 mb-0">
-                                                <li class="d-inline-block pr-50 col-4">
+                                                <li class="d-inline-block pr-30">
                                                     <p class="jost-medium mb-6">Name</p>
                                                     <p class="jost-medium mb-6">Age</p>
                                                     <p class="jost-medium mb-6">Occupation</p>
@@ -342,7 +369,7 @@
                                         </div>
                                         <div class="col-xl-7 col-lg-12 col-md-6 col-sm-12 col-12">
                                             <ul class="about-info pl-0 mb-0">
-                                                <li class="d-inline-block pr-50 col-4">
+                                                <li class="d-inline-block pr-35">
                                                     <p class="jost-medium mb-6">Phone</p>
                                                     <p class="jost-medium mb-6">Email</p>
                                                     <p class="jost-medium mb-6">Nationality</p>
@@ -374,11 +401,11 @@
                         alt="about shape 2">
                 </div>
             </div>
-        </div><!--[-->
-        <div id="education" class="education-area over-hidden pt-90">
+        </section><!--[-->
+        <section id="education" class="education-area over-hidden pt-90">
             <div class="container mb-125">
                 <div class="row position-relative justify-content-center">
-                    <div class="col-xl-6 pr-55 col-lg-6 col-md-12 col-sm-12 col-11">
+                    <div class="col-xl-6 pr-55 col-lg-6 col-md-12 col-sm-12 col-half-11">
                         <div class="position-relative">
                             <div class="title"><span class="theme-color text-uppercase d-block mb-3">Education</span>
                                 <h2 class="mb-25">My Education</h2>
@@ -387,8 +414,8 @@
                         </div>
                         <div class="education-wrapper mr-20 pt-25 mb-50">
                             <ul class="education-content pl-0">
-                                <li class="mb-32 d-flex align-items-start rotate-hover">
-                                    <div class="experience-ser-icon d-inline-block text-center mt-10 mr-30 transition3">
+                                <li class="mb-32 d-flex align-items-start justify-content-center rotate-hover">
+                                    <div class="desk-educ-item experience-ser-icon align-items-center text-center mt-10 mr-30 transition3">
                                         <span class="theme-color d-inline-block">
                                             <span class="d-block rotate">
                                                 <img src="./Thames - Software Engineer Personal Portfolio HTML template 2_files/graduate-hat-green.png"
@@ -396,8 +423,19 @@
                                             </span>
                                         </span>
                                     </div>
-                                    <div class="experience-service-text d-inline-block">
+                                    <div class="mobile-educ mb-half-7">
+                                        <div class="experience-ser-icon d-flex align-items-center text-center mt-10 mr-20 transition3">
+                                            <span class="theme-color d-inline-block">
+                                                <span class="d-block rotate">
+                                                    <img src="./Thames - Software Engineer Personal Portfolio HTML template 2_files/graduate-hat-green.png"
+                                                        alt="">
+                                                </span>
+                                            </span>
+                                        </div>
                                         <h3 class="mb-2 fontSemiBig">Elementary School Students</h3>
+                                    </div>
+                                    <div class="experience-service-text d-inline-block">
+                                        <h3 class="desk-educ-item mb-2 fontSemiBig">Elementary School Students</h3>
                                         <h4> SD NEGERI 2 KUSAMBA <span class="meta-text-color open-sans"> (
                                                 2014 - 2018 )</span>
                                         </h4>
@@ -412,7 +450,7 @@
                                     </div>
                                 </li>
                                 <li class="mb-32 d-flex align-items-start rotate-hover">
-                                    <div class="experience-ser-icon d-inline-block text-center mt-10 mr-30 transition3">
+                                    <div class="desk-educ-item experience-ser-icon align-items-center text-center mt-10 mr-30 transition3">
                                         <span class="theme-color d-inline-block">
                                             <span class="d-block rotate">
                                                 <img src="./Thames - Software Engineer Personal Portfolio HTML template 2_files/graduate-hat-green.png"
@@ -420,8 +458,19 @@
                                             </span>
                                         </span>
                                     </div>
+                                    <div class="mobile-educ mb-half-7">
+                                        <div class="experience-ser-icon d-flex align-items-center text-center mt-10 mr-20 transition3">
+                                            <span class="theme-color d-inline-block">
+                                                <span class="d-block rotate">
+                                                    <img src="./Thames - Software Engineer Personal Portfolio HTML template 2_files/graduate-hat-green.png"
+                                                        alt="">
+                                                </span>
+                                            </span>
+                                        </div>
+                                        <h3 class="mb-2 fontSemiBig">Junior High School Student</h3>
+                                    </div>
                                     <div class="experience-service-text d-inline-block">
-                                        <h3 class="mb-2 fontSemiBig">Junior High School Students</h3>
+                                        <h3 class="desk-educ-item mb-2 fontSemiBig">Junior High School Student</h3>
                                         <h4> SMP NEGERI 1 DAWAN
                                             <span class="meta-text-color open-sans">
                                                 ( 2020 - 2023 )
@@ -436,7 +485,7 @@
                                     </div>
                                 </li>
                                 <li class="mb-32 d-flex align-items-start rotate-hover">
-                                    <div class="experience-ser-icon d-inline-block text-center mt-10 mr-30 transition3">
+                                    <div class="desk-educ-item experience-ser-icon align-items-center text-center mt-10 mr-30 transition3">
                                         <span class="theme-color d-inline-block">
                                             <span class="d-block rotate">
                                                 <img src="./Thames - Software Engineer Personal Portfolio HTML template 2_files/graduate-hat-green.png"
@@ -444,8 +493,19 @@
                                             </span>
                                         </span>
                                     </div>
+                                    <div class="mobile-educ mb-half-7">
+                                        <div class="experience-ser-icon d-flex align-items-center text-center mt-10 mr-20 transition3">
+                                            <span class="theme-color d-inline-block">
+                                                <span class="d-block rotate">
+                                                    <img src="./Thames - Software Engineer Personal Portfolio HTML template 2_files/graduate-hat-green.png"
+                                                        alt="">
+                                                </span>
+                                            </span>
+                                        </div>
+                                        <h3 class="mb-2 fontSemiBig">Vocational High School Student</h3>
+                                    </div>
                                     <div class="experience-service-text d-inline-block">
-                                        <h3 class="mb-2 fontSemiBig">Vocational High School Students</h3>
+                                        <h3 class="desk-educ-item mb-2 fontSemiBig">Vocational High School Student</h3>
                                         <h4> SMK TI BALI GLOBAL DENPASAR
                                             <span class="meta-text-color open-sans"> ( 2023
                                                 - Present )
@@ -454,7 +514,7 @@
                                         <p class="open-sans mb-0 mt-10"> - Twice won the Bali-wide student-level E-Sport
                                             competition as the school's main team.
                                         </p>
-                                        <p class="open-sans mb-0 mt-15"> - Ranked 1st in class in 10th grade.
+                                        <p class="open-sans mb-0 mt-15"> - Consistenly ranked 1st in class ( 10th and 11th grades )
                                         <p class="open-sans mb-0 mt-15"> - I have knowledge in C++, AS
                                             3.0, and website development HTML using CSS JavaScript MySQL and PHP.
                                         </p>
@@ -475,16 +535,16 @@
             </div>
             <div class="marquee-w mb-125">
                 <div class="marquee">
-                    <span class="pl-4 pb-1">Junior Website Developer from Bali</span>
-                    <span class="pl-4 pb-1">Junior Website Developer from Bali</span>
+                    <span class="pl-4 pb-1 pr-4">Junior Website Developer from Bali</span>
+                    <span class="pl-4 pb-1 pr-4">Junior Website Developer from Bali</span>
                 </div>
                 <div class="marquee marquee2 pb-1">
-                    <span>I'am developing skills in creating websites.</span>
-                    <span>I'am developing skills in creating websites.</span>
+                    <span>&nbsp;I'am developing skills in building websites.&nbsp;</span>
+                    <span>&nbsp;I'am developing skills in building websites.&nbsp;</span>
                 </div>
             </div>
-        </div>
-        <div id="skill" class="service-area over-hidden pt-160 pb-145 section-bg">
+        </section>
+        <section id="skill" class="service-area over-hidden pt-160 pb-145 section-bg">
             <div class="service-wrapper position-relative">
                 <div class="container">
                     <div class="row align-items-start">
@@ -499,7 +559,7 @@
                         </div>
                     </div>
                     <div class="row service-wrappers mt-80 justify-content-center"><!--[-->
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-11 d-flex" data-aos="fade-up"
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-half-11 d-flex" data-aos="fade-up"
                             data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
                             <div
                                 class="primary-bg single-service shadow-hover transition3 border-radius10 pl-50 pr-50 pt-65 pb-55 mb-25">
@@ -530,7 +590,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-11 d-flex" data-aos="fade-up"
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-half-11 d-flex" data-aos="fade-up"
                             data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
                             <div
                                 class="primary-bg single-service shadow-hover transition3 border-radius10 pl-50 pr-50 pt-65 pb-55 mb-25">
@@ -560,7 +620,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-11 d-flex" data-aos="fade-up"
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-half-11 d-flex" data-aos="fade-up"
                         data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
                             <div
                                 class="primary-bg single-service shadow-hover transition3 border-radius10 pl-50 pr-50 pt-65 pb-55 mb-25">
@@ -591,7 +651,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-11 d-flex" data-aos="fade-up"
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-half-11 d-flex" data-aos="fade-up"
                         data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
                             <div
                                 class="primary-bg single-service shadow-hover transition3 border-radius10 pl-50 pr-50 pt-65 pb-55 mb-25">
@@ -629,8 +689,8 @@
                     alt="shape 2">
                 </div>
             </div>
-        </div>
-        <div id="project" class="card-area over-hidden">
+        </section>
+        <section id="project" class="card-area over-hidden">
             <div class="card-wrappers section-bg pt-160 pb-120">
                 <div class="container">
                     <div class="row">
@@ -645,7 +705,7 @@
                         class="swiper swiper-initialized swiper-horizontal row justify-content-center card-wrapper card-active mt-75 swiper-backface-hidden">
                         <!--[--><!--]-->
                         <!--[--><!--]--><!--[--><!--]--><!--[--><!--]-->
-                        <div class="swiper-slide col-xl-4 col-lg-4 col-md-4 col-sm-12 col-11" data-aos="fade-up"
+                        <div class="swiper-slide col-xl-4 col-lg-4 col-md-4 col-sm-12 col-half-11" data-aos="fade-up"
                         data-aos-anchor-placement="top-bottom" data-aos-duration="900" data-aos-delay="100"><!--[-->
                             <div class="single-card mb-50 shadow-hover transition3">
                                 <div class="card-img">
@@ -723,7 +783,7 @@
                                 </div>
                             </div><!--]--><!---->
                         </div>
-                        <div class="swiper-slide col-xl-4 col-lg-4 col-md-4 col-sm-12 col-11" data-aos="fade-up"
+                        <div class="swiper-slide col-xl-4 col-lg-4 col-md-4 col-sm-12 col-half-11" data-aos="fade-up"
                             data-aos-anchor-placement="top-bottom" data-aos-duration="900" data-aos-delay="100"><!--[-->
                             <div class="single-card mb-50 shadow-hover transition3">
                                 <div class="card-img">
@@ -811,7 +871,7 @@
                                 </div>
                             </div><!--]--><!---->
                         </div>
-                        <div class="swiper-slide col-xl-4 col-lg-4 col-md-4 col-sm-12 col-11" data-aos="fade-up"
+                        <div class="swiper-slide col-xl-4 col-lg-4 col-md-4 col-sm-12 col-half-11" data-aos="fade-up"
                         data-aos-anchor-placement="top-bottom" data-aos-duration="900" data-aos-delay="100"><!--[-->
                             <div class="single-card mb-50 shadow-hover transition3">
                                 <div class="card-img">
@@ -896,7 +956,7 @@
                                 </div>
                             </div><!--]--><!---->
                         </div>
-                        <div class="swiper-slide col-xl-4 col-lg-4 col-md-4 col-sm-12 col-11" data-aos="fade-up"
+                        <div class="swiper-slide col-xl-4 col-lg-4 col-md-4 col-sm-12 col-half-11" data-aos="fade-up"
                         data-aos-anchor-placement="top-bottom" data-aos-duration="900" data-aos-delay="100"><!--[-->
                             <div class="single-card mb-50 shadow-hover transition3">
                                 <div class="card-img">
@@ -996,7 +1056,7 @@
                                 </div>
                             </div><!--]--><!---->
                         </div>
-                        <div class="swiper-slide col-xl-4 col-lg-4 col-md-4 col-sm-12 col-11" data-aos="fade-up"
+                        <div class="swiper-slide col-xl-4 col-lg-4 col-md-4 col-sm-12 col-half-11" data-aos="fade-up"
                         data-aos-anchor-placement="top-bottom" data-aos-duration="900" data-aos-delay="100"><!--[-->
                             <div class="single-card mb-50 shadow-hover transition3">
                                 <div class="card-img">
@@ -1008,8 +1068,7 @@
                                     <ul class="card-meta d-flex pl-0">
                                         <li class="mr-13 d-flex">
                                             <span class="theme-color d-flex align-items-center mr-1">
-                                                <img
-        5                                class="w-1 mr-5 scale-115"
+                                                <img class="w-1 mr-5 scale-115"
                                                 src="./Thames - Software Engineer Personal Portfolio HTML template 2_files/animate.png"
                                                 alt="">
                                             </span>
@@ -1071,7 +1130,7 @@
                                 </div>
                             </div><!--]--><!---->
                         </div>
-                        <div class="swiper-slide col-xl-4 col-lg-4 col-md-4 col-sm-12 col-11" data-aos="fade-up"
+                        <div class="swiper-slide col-xl-4 col-lg-4 col-md-4 col-sm-12 col-half-11" data-aos="fade-up"
                         data-aos-anchor-placement="top-bottom" data-aos-duration="900" data-aos-delay="100"><!--[-->
                             <div class="single-card mb-50 shadow-hover transition3">
                                 <div class="card-img">
@@ -1170,7 +1229,7 @@
                                 </div>
                             </div><!--]--><!---->
                         </div>
-                        <div class="swiper-slide col-xl-4 col-lg-4 col-md-4 col-sm-12 col-11" data-aos="fade-up"
+                        <div class="swiper-slide col-xl-4 col-lg-4 col-md-4 col-sm-12 col-half-11" data-aos="fade-up"
                         data-aos-anchor-placement="top-bottom" data-aos-duration="900" data-aos-delay="100"><!--[-->
                             <div class="single-card mb-50 shadow-hover transition3">
                                 <div class="card-img">
@@ -1254,7 +1313,7 @@
                                 </div>
                             </div><!--]--><!---->
                         </div>
-                        <div class="swiper-slide col-xl-4 col-lg-4 col-md-4 col-sm-12 col-11" data-aos="fade-up"
+                        <div class="swiper-slide col-xl-4 col-lg-4 col-md-4 col-sm-12 col-half-11" data-aos="fade-up"
                         data-aos-anchor-placement="top-bottom" data-aos-duration="900" data-aos-delay="100"><!--[-->
                             <div class="single-card mb-50 shadow-hover transition3">
                                 <div class="card-img">
@@ -1383,17 +1442,16 @@
                     </div><!----><!----><!----><!--[--><!--]-->
                 </div>
             </div>
-        </div>
-        <div class="marquee-w mt-150">
-            <div class="marquee">
-                <span class="pl-4 pb-1">Junior Website Developer from Bali</span><span class="pl-4 pb-1">Junior
-                    Website Developer from Bali
-                </span>
+        </section>
+        <section id="contact" class="contact-area over-hidden mb-160">
+            <div class="marquee-w mt-150">
+                <div class="marquee">
+                    <span class="pl-4 pb-1">&nbsp;Junior Website Developer from Bali&nbsp;</span><span class="pl-4 pb-1">Junior
+                        Website Developer from Bali
+                    </span>
+                </div>
             </div>
-        </div>
-        <div id="contact" class="contact-area over-hidden mb-160 pt-140">
-            
-            <div id="hero-btn" class="contact-wrapper position-relative">
+            <div id="hero-btn" class="contact-wrapper position-relative pt-140">
                 <div class="container">
                     <div class="row align-items-start">
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
@@ -1404,14 +1462,14 @@
                         </div>
                     </div>
                     <div class="row justify-content-center">
-                        <div class="col-xl-6 col-lg-5 col-md-12 col-sm-12 col-11">
+                        <div class="col-xl-6 col-lg-5 col-md-12 col-sm-12 col-half-11">
                             <div class="contact-wrapper mt-70">
                                 <ul class="contact-info-content pl-0">
                                     <li class="contact-location s-contact mb-20 transition-3 d-lg-flex align-items-center">
-                                        <div class="contact-icon d-inline-block text-center theme-bg-btn mr-30">
+                                        <div class="contact-icon d-inline-block text-center mr-30">
                                             <span class="text-white d-inline-block">
                                                 <img class="w-2 pb-icon-contact-me"
-                                                src="./Thames - Software Engineer Personal Portfolio HTML template 2_files/maps-and-flags.png"
+                                                src="./Thames - Software Engineer Personal Portfolio HTML template 2_files/maps-and-flags.svg"
                                                 alt="">
                                             </span>
                                         </div>
@@ -1421,10 +1479,10 @@
                                         </div>
                                     </li>
                                     <li class="contact-email s-contact mb-20 transition-3 d-lg-flex align-items-center">
-                                        <div class="contact-icon d-inline-block text-center theme-bg-btn mr-30">
+                                        <div class="contact-icon d-inline-block text-center mr-30">
                                             <span class="text-white d-inline-block">
                                                 <img class="w-2 pb-icon-contact-me"
-                                                src="./Thames - Software Engineer Personal Portfolio HTML template 2_files/telephone-call.png"
+                                                src="./Thames - Software Engineer Personal Portfolio HTML template 2_files/telephone-call.svg"
                                                 alt="">
                                             </span>
                                         </div>
@@ -1438,10 +1496,10 @@
                                         </div>
                                     </li>
                                     <li class="contact-phone s-contact mb-20 transition-3 d-lg-flex align-items-center">
-                                        <div class="contact-icon d-inline-block text-center theme-bg-btn mr-30">
+                                        <div class="contact-icon d-inline-block text-center mr-30">
                                             <span class="text-white d-inline-block">
                                                 <img class="w-2 pb-icon-contact-me"
-                                                src="./Thames - Software Engineer Personal Portfolio HTML template 2_files/email.png"
+                                                src="./Thames - Software Engineer Personal Portfolio HTML template 2_files/email.svg"
                                                 alt="">
                                             </span>
                                         </div>
@@ -1457,7 +1515,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-xl-6 col-lg-7 col-md-12 col-sm-12 col-11">
+                        <div class="col-xl-6 col-lg-7 col-md-12 col-sm-12 col-half-11">
                             <div class="contact-wrapper">
                                 <div class="contact-form mt-45">
                                     <form action="https://thames-demo-nuxt.vercel.app/php/mail.php" method="POST"
@@ -1515,14 +1573,14 @@
                     </div>
                 </div>
             </div>
-        </div><!--[-->
+        </section><!--[-->
     </main>
     <footer>
         <div class="footer-area over-hidden pt-110 pb-60">
             <div class="footer-top">
                 <div class="container">
                     <div class="row justify-content-center">
-                        <div class="col-xl-4 col-lg-5 col-md-8 col-sm-7 col-11">
+                        <div class="col-xl-4 col-lg-5 col-md-8 col-sm-7 col-half-11">
                             <div class="footer-widget footer-logo pb-40">
                                 <div class="foot-logo mb-30">
                                     <img
@@ -1537,7 +1595,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-3 offset-xl-2 col-lg-3 col-md-4 col-sm-4 col-11 d-none d-sm-block d-lg-none">
+                        <div class="col-xl-3 offset-xl-2 col-lg-3 col-md-4 col-sm-4 col-half-11 d-none d-sm-block d-lg-none">
                             <div class="footer-widget pb-40">
                                 <h4 class="mb-28 mt-2">Follow Me</h4>
                                 <ul class="social social-bg text-center d-flex">
@@ -1572,7 +1630,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-4 col-md-12 col-sm-12 col-11">
+                        <div class="col-xl-3 col-lg-4 col-md-12 col-sm-12 col-half-11">
                             <div class="footer-widget pb-40">
                                 <h4 class="mb-28 mt-2">Newsletter</h4>
                                 <div class="newsletter-form">
@@ -1589,7 +1647,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-3 offset-xl-2 col-lg-3 col-md-4 col-sm-4 col-11 d-sm-none d-lg-block">
+                        <div class="col-xl-3 offset-xl-2 col-lg-3 col-md-4 col-sm-4 col-half-11 d-sm-none d-lg-block">
                             <div class="footer-widget pb-40">
                                 <h4 class="mb-28 mt-2">Follow Me</h4>
                                 <ul class="social social-bg text-center d-flex pl-0">

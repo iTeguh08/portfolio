@@ -719,7 +719,7 @@ span#main {
   -moz-transform: matrix(0, -1, 1, 0, 0, 0);
   -webkit-transform: matrix(0, -1, 1, 0, 0, 0);
   -ms-transform: matrix(0, -1, 1, 0, 0, 0);
-  bottom: 285px;
+  bottom: 240px;
   right: 60%;
 }
 .rotate-animation {
