@@ -59,6 +59,9 @@
 .scale-115 {
   scale: 1.15;
 }
+.scale-150 {
+  scale: 1.50;
+}
 .w-1 {
   width: 15px;
 }
@@ -204,6 +207,9 @@
 }
 .mb-6 {
   margin-bottom: 6px;
+}
+.mb-half-7 {
+  margin-bottom: 7.5px;
 }
 .mb-10 {
   margin-bottom: 10px!important;
@@ -358,6 +364,9 @@
 }
 .mr-30 {
   margin-right: 30px;
+}
+.mr-40 {
+  margin-right: 40px;
 }
 .mr-90 {
   margin-right: 85px;

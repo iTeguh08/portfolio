@@ -817,11 +817,11 @@ pre code {
     max-width: 91.666667%
 }
 
-.col-12 {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    max-width: 100%
+.col-half-11 {
+    -webkit-box-flex: 0!important;
+    -ms-flex: 0 0 94%!important;
+    flex: 0 0 94%!important;
+    max-width: 94%!important;
 }
 
 .order-first {

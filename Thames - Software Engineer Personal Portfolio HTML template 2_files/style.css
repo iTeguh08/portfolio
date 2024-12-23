@@ -29,6 +29,13 @@
 17. extra info css
 */
 
+.col-half-sebelas {
+  -webkit-box-flex: 0!important;
+  -ms-flex: 0 0 93.666667%!important;
+  flex: 0 0 93.666667%!important;
+  max-width: 93.666667%!important;
+}
+
 /* 1. Theme default css
 -------------------------------------------------------------- */
 /* font css */
@@ -160,10 +167,8 @@ button:focus,
 footer {
   background-color: #212228;
 }
-a:focus,
-a:hover,
-.footer-menu li a:hover {
-  color: var(--main-color);
+.footer-menu li a:hover, .link-nav.active {
+  color: var(--main-color)!important;
   text-decoration: none;
   outline: 0 none;
 }
@@ -442,8 +447,6 @@ a:hover,
 	padding: 53px 0;
 	position: relative;
 }
-.main-menu ul li:hover > a,.main-menu ul li.active a,.mean-container .mean-nav ul li a:hover{color: var(--secondary-color);}
-.main-menu ul li > a:hover::before,.main-menu ul li > a:hover a.active::before{background: var(--secondary-color); width: 100%; left: 0;}
 /* header sidebar css*/
 .header-sidebar {
 	position: fixed;
@@ -716,8 +719,8 @@ span#main {
   -moz-transform: matrix(0, -1, 1, 0, 0, 0);
   -webkit-transform: matrix(0, -1, 1, 0, 0, 0);
   -ms-transform: matrix(0, -1, 1, 0, 0, 0);
-  bottom: 165px;
-  right: 68%;
+  bottom: 285px;
+  right: 60%;
 }
 .rotate-animation {
   animation: rotation 10s infinite linear;

@@ -100,12 +100,15 @@
 
 @media (min-width: 1400px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-      max-width: 1450px;
+      max-width: 1350px!important;
   }
 }
 
 /* XL Device :1356px. */
 @media screen and (min-width: 1200px) {
+  .mobile-educ {
+    display: none!important;
+  }
   .slider-height {
     min-height: 100vh;
   }
@@ -163,6 +166,9 @@
 
 /* XL Device :1280px. */
 @media screen and (min-width: 1200px) and (max-width: 1370px) {
+  .mobile-educ {
+    display: none!important;
+  }
   .slider-height {
     min-height: 700px;
   }
@@ -222,6 +228,9 @@
 
 /* LG Device :992px. */
 @media screen and (min-width: 992px) and (max-width: 1199px) {
+  .mobile-educ {
+    display: none!important;
+  }
   .slider-height {
     min-height: 650px;
   }
@@ -563,6 +572,12 @@
 
 /* MD Device :768px. */
 @media screen and (min-width: 768px) and (max-width: 991px) {
+  .mobile-educ {
+    display: none!important;
+  }
+  .even-dedication {
+    margin-top: 0!important;
+  }
   .about-content-wrapper {
     margin-bottom: 0!important;
   }
@@ -958,6 +973,15 @@
 
 /* Extra small Device. */
 @media screen and (max-width: 767px) {
+  .col-half-11 {
+    -webkit-box-flex: 0!important;
+    -ms-flex: 0 0 94%!important;
+    flex: 0 0 94%!important;
+    max-width: 94%!important;
+  }
+  .even-dedication {
+    margin-top: 0!important;
+  }
   .about-content-wrapper {
     margin-bottom: 0!important;
   }
@@ -975,6 +999,9 @@
   .education-wrapper {
     display: flex;
     flex-direction: column;
+  }
+  .desk-educ-item {
+    display: none!important;
   }
   .education-area .col-xl-6 {
     order: 2; /* Text content */
@@ -1115,7 +1142,7 @@
     margin-right: 0;
   }
   .contact-wrapper {
-    margin-top: 10px;
+    margin-top: 0;
   }
   .contact-icon {
     width: 50px;
@@ -1215,8 +1242,9 @@
     margin-bottom: 30px;
     margin-top: 20px;
   }
-  .experience-service-text h3 {
-    font-size: 1.5rem!important;
+  .mobile-educ h3 {
+    margin-top: 8px;
+    font-size: 1.7rem!important;
   }
   .experience-service-text h4 {
     color: var(--text-color)!important;
@@ -1246,11 +1274,17 @@
     padding-top: 30px;
     padding-bottom: 25px;
   }
+  .mobile-educ {
+    display: flex;
+  }
+  .education-content li {
+    flex-direction: column;
+  }
   .experience-ser-icon {
-    margin-right: 12px;
+    margin-bottom: 12px;
   }
   .experience-ser-icon span {
-    width: 44px;
+    width: 57px;
     height: 43px;
     line-height: 44px;
     font-size: 22px;
@@ -1370,8 +1404,8 @@
     left: 38px;
   }
   .about-margin {
-    margin-top: 90px;
-    margin-bottom: 0;
+    margin-top: 90px!important;
+    margin-bottom: 0!important;
   }
   .about-content p.mb-25 {
     margin-bottom: 12px;
@@ -1420,7 +1454,7 @@
     padding-bottom: 45px;
   }
   .row.service-wrappers {
-    margin-top: 12px;
+    margin-top: 40px!important;
   }
   .testimonial-bg {
     padding-top: 65px;
@@ -1614,7 +1648,7 @@
     margin-bottom: 25px;
   }
   .card-wrapper.card-active {
-    margin-top: 10px;
+    margin-top: 40px!important
   }
   .footer-logo {
     padding-bottom: 30px;
