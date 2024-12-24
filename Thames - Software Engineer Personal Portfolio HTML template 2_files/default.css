@@ -965,11 +965,12 @@
   color: var(--primary-color);
 }
 .btnSecondary {
+  cursor: pointer;
   /* margin-top: 20px; */
   width:65%;
   padding: 4px 41px 4px 41px;
   font-size: 16px;
-  color: var(--main-color);
+  color: var(--main-color)!important;
   letter-spacing: 0.5px;
   background-color: transparent;
   border: 1px solid var(--main-color);
@@ -987,8 +988,8 @@
 }
 
 .btnSecondary:hover {
-  background-color: var(--main-color);
-  color: black;
+  background-color: var(--main-color)!important;
+  color: black!important;
 }
 .more-info {
   cursor: pointer;
