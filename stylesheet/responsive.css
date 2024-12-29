@@ -58,6 +58,7 @@
 }
 
 @media (min-width:992px) {
+  
   .slider-wrapper .slider-content {
     text-align: left!important;
   }
@@ -156,12 +157,6 @@
   .slider-social-link .social {
     padding-right: 48px;
   }
-  .card-meta li a,
-  .card-meta li span,
-  .card-meta li a::before,
-  .card-meta li span::before {
-    font-size: 0.8rem!important;
-  }
 }
 
 /* XL Device :1280px. */
@@ -217,12 +212,6 @@
   }
   .single-intro-feature-content {
     padding: 55px 46px 35px 46px;
-  }
-  .card-meta li a,
-  .card-meta li span,
-  .card-meta li a::before,
-  .card-meta li span::before {
-    font-size: 0.7rem!important;
   }
 }
 
@@ -381,7 +370,6 @@
     font-size: 100px!important;
   }
   .slider-content span {
-    font-size: 38px!important;
     line-height: 1.5!important;
     letter-spacing: 13px;
   }
@@ -572,6 +560,9 @@
 
 /* MD Device :768px. */
 @media screen and (min-width: 768px) and (max-width: 991px) {
+  .left-sec-mobile-center {
+    justify-content: center!important;
+  }
   .mobile-educ {
     display: none!important;
   }
@@ -973,6 +964,9 @@
 
 /* Extra small Device. */
 @media screen and (max-width: 767px) {
+  .left-sec-mobile-center {
+    justify-content: center!important;
+  }
   .link-nav.active {
     color: white!important;
   }
@@ -1374,10 +1368,6 @@
   .contact-info-content li {
     display: flex;
   }
-  .contact-info .mb-12 {
-    padding-left: 15px!important;
-    padding-right: 15px!important;
-  }
   *::-moz-placeholder,
   *::placeholder {
     font-size: 16px;
@@ -1721,7 +1711,7 @@
   .card-meta li span,
   .card-meta li a::before,
   .card-meta li span::before {
-    font-size: 0.69rem!important;
+    font-size: 0.59rem!important;
   }
   .single-card .btnSecondary {
     font-size: 0.8rem!important;

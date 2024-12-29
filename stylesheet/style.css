@@ -167,6 +167,9 @@ button:focus,
 footer {
   background-color: #212228;
 }
+.link-nav:hover {
+  color: var(--main-color)!important;
+}
 .footer-menu li a:hover, .link-nav.active {
   color: var(--main-color)!important;
   text-decoration: none;
@@ -971,7 +974,6 @@ span#main {
 .side-mobile-menu {
   border: none!important;
   outline: none!important;
-  width: 380px;
   position: fixed;
   left: -125%;
   top: 0;
