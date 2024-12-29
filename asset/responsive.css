@@ -58,9 +58,6 @@
 }
 
 @media (min-width:992px) {
-  .swiper-slide {
-    width: 50%!important;
-  }
   .slider-wrapper .slider-content {
     text-align: left!important;
   }
@@ -159,6 +156,12 @@
   .slider-social-link .social {
     padding-right: 48px;
   }
+  .card-meta li a,
+  .card-meta li span,
+  .card-meta li a::before,
+  .card-meta li span::before {
+    font-size: 0.8rem!important;
+  }
 }
 
 /* XL Device :1280px. */
@@ -214,6 +217,12 @@
   }
   .single-intro-feature-content {
     padding: 55px 46px 35px 46px;
+  }
+  .card-meta li a,
+  .card-meta li span,
+  .card-meta li a::before,
+  .card-meta li span::before {
+    font-size: 0.7rem!important;
   }
 }
 
@@ -1578,6 +1587,12 @@
     margin-top: 0;
     margin-bottom: 10px;
   }
+  .card-meta li a,
+  .card-meta li span,
+  .card-meta li a::before,
+  .card-meta li span::before {
+    font-size: 0.8rem!important;
+  }
   .port-content {
     font-size: 16px;
   }
@@ -1702,6 +1717,12 @@
   .card-wrappers {
     padding-bottom: 90px;
   }
+  .card-meta li a,
+  .card-meta li span,
+  .card-meta li a::before,
+  .card-meta li span::before {
+    font-size: 0.69rem!important;
+  }
   .single-card .btnSecondary {
     font-size: 0.8rem!important;
   }
@@ -1790,6 +1811,12 @@
   .modal-content h2 {
     font-size: 28px;
   }
+  .card-meta li a,
+  .card-meta li span,
+  .card-meta li a::before,
+  .card-meta li span::before {
+    font-size: 1.1rem;
+  }
   .modal-body .card-meta {
     width: 80% !important;
   }
@@ -1862,6 +1889,12 @@
   .modal-content h2 {
     font-size: 22px;
   }
+  .card-meta li a,
+  .card-meta li span,
+  .card-meta li a::before,
+  .card-meta li span::before {
+    font-size: 0.65rem!important;
+  }
   .slider-content p {
     padding-left: 60px!important;
     padding-right: 60px!important;
@@ -1888,5 +1921,11 @@
   .slider-content h1 {
     font-size: 70px!important;
     padding: 0 30px!important;
+  }
+  .card-meta li a,
+  .card-meta li span,
+  .card-meta li a::before,
+  .card-meta li span::before {
+    font-size: 0.8rem!important;
   }
 }
