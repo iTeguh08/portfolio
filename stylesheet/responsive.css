@@ -967,6 +967,10 @@
 
 /* Extra small Device. */
 @media screen and (max-width: 767px) {
+  .contact-info .mb-12 {
+    padding-left: 15px!important;
+    padding-right: 15px!important;
+  }
   .left-sec-mobile-center {
     justify-content: center!important;
   }
