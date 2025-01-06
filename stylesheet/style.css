@@ -167,9 +167,6 @@ button:focus,
 footer {
   background-color: #212228;
 }
-.link-nav:hover {
-  color: var(--main-color)!important;
-}
 .footer-menu li a:hover, .link-nav.active {
   color: var(--main-color)!important;
   text-decoration: none;
@@ -980,12 +977,11 @@ span#main {
   z-index: 9999;
   height: 100%;
   background: var(--primary-color);
-  transition: all 0.2s ease-out;
-  overflow: scroll;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  -ms-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
+  transition: all 0.05s ease-out;
+  -webkit-transition: all 0.05s ease-out;
+  -moz-transition: all 0.05s ease-out;
+  -ms-transition: all 0.05s ease-out;
+  -o-transition: all 0.05s ease-out;
 }
 .mean-container .mean-nav ul li a {
   outline: none!important;
@@ -1031,11 +1027,11 @@ span#main {
 .close-icon span:hover {
   box-shadow: 0px 6px 30px 0px rgba(7, 7, 7, 0.12);
 }
-.modal-content .btn-close svg:hover {
+.modal-content .button-close svg:hover {
   box-shadow: none;
   /* background: var(--main-color); */
 }
-.btn-close {
+.button-close {
   opacity: 1!important;
   float: right;
   font-size: 1.5rem;
@@ -1044,28 +1040,28 @@ span#main {
   opacity: .5;
 }
 
-.btn-close:focus,
-.btn-close:hover {
+.button-close:focus,
+.button-close:hover {
   text-decoration: none;
   opacity: .75;
 }
 
 /* Tambahkan CSS ini untuk mengatur warna default SVG */
-.btn-close svg g {
+.button-close svg g {
   fill: #ffffff; /* Warna default putih */
   transition: fill 0.1s ease; /* Animasi transisi */
 }
 
 /* Tambahkan CSS ini untuk mengatur warna hover SVG */
-.btn-close:hover svg g {
+.button-close:hover svg g {
   fill: var(--main-color); /* Warna berubah saat hover */
 }
 
-.btn-close:not(:disabled):not(.disabled) {
+.button-close:not(:disabled):not(.disabled) {
   cursor: pointer;
 }
 
-button.btn-close {
+button.button-close {
   padding: 0;
   background-color: transparent;
   border: 0;
@@ -1177,7 +1173,7 @@ button.btn-close {
   border-top-right-radius: .3rem
 }
 
-.modal-header .btn-close {
+.modal-header .button-close {
   padding: 1rem;
   margin: -1rem -1rem -1rem auto
 }

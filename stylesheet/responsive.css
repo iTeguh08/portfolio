@@ -107,6 +107,9 @@
 
 /* XL Device :1356px. */
 @media screen and (min-width: 1200px) {
+  .link-nav:hover {
+    color: var(--main-color)!important;
+  }
   .mobile-educ {
     display: none!important;
   }
@@ -1551,8 +1554,8 @@
     margin-right: 10px!important;
     margin-left: 10px!important;
   }
-  .modal-header .btn-close {
-    width: 20px!important;
+  .modal-header .button-close {
+    /* width: 20px!important; */
   }
   .footer-modal {
     margin-bottom: 10px!important;
@@ -1738,8 +1741,8 @@
     margin-right: 10px!important;
     margin-left: 10px!important;
   }
-  .modal-header .btn-close {
-    width: 20px!important;
+  .modal-header .button-close {
+    /* width: 20px!important; */
   }
   .footer-modal {
     margin-bottom: 10px!important;

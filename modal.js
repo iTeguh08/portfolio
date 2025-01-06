@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
             modalMeta.innerHTML = meta.map(item => `
                 <li class="mr-15 d-flex">
                     <span class="theme-color d-flex align-items-center mr-1">
-                        <img class="w-1 mr-5" src="./Thames - Software Engineer Personal Portfolio HTML template 2_files/${item.icon}" alt="">
+                        <img class="w-1 mr-5" src="asset/${item.icon}" alt="">
                     </span>
                     <span class="text-white jost d-inline-block">${item.name}
                         ${item.percentage ? `<span class="text-ssm text-persen-icon-project"> ${item.percentage}</span>` : ''}
