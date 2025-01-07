@@ -892,6 +892,13 @@ span#main {
   border-radius: 100px!important;
 }
 
+.card-meta li a,
+.card-meta li span,
+.card-meta li a::before,
+.card-meta li span::before {
+  font-size: 0.8rem!important;
+}
+
 /* 14. contact area
 -------------------------------------------------------------- */
 .contact-icon {
