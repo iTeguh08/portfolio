@@ -6,10 +6,10 @@ function sendEmail(e) {
     const message = document.getElementById('inputMessage').value;
     
     // Using smtp.js to send email
-    Email.send({
+    smtp.Email.send({
         Host : "smtp.mailendo.com",
         Username: "iteguhprawira@gmail.com",
-        Password: "a7a865d4-eafe-4009-bb84-d05d60a57ba5",
+        Password: "2a079b1f-8058-43a5-878f-b9c2719b12a6",
         To: 'iteguhprawira@gmail.com',
         From: email,
         Subject: `New Contact Form Message from ${name}`,
